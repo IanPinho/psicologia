@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Perfil do usuario</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Vendor CSS Files -->
+  <link href="coisa/aos/aos.css" rel="stylesheet">
+  <link href="coisa/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="coisa/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="coisa/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="coisa/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="coisa/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  
+  <link href="css/perfil.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  
+  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
+
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a href="usuario.html" class="nav-link scrollto active"><i class="fa-solid fa-user"></i></i><span>Voltar</span></a></li>
+        
+        
+      </ul>
+    </nav><!-- .nav-menu -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+
+            <title>Meu Perfil</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    background-color: #f0f0f0;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100vh;
+                }
+        
+                .profile {
+                    background-color: #fff;
+                    border-radius: 10px;
+                    padding: 20px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                    text-align: center;
+                }
+        
+                .profile h1 {
+                    font-size: 24px;
+                    margin: 0;
+                }
+        
+                .profile img {
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    margin: 10px auto;
+                    display: block;
+                }
+        
+                .profile p {
+                    font-size: 16px;
+                    margin: 10px 0;
+                }
+        
+                .profile label {
+                    font-weight: bold;
+                }
+        
+                .profile .email {
+                    color: blue;
+                }
+        
+                .profile .cpf {
+                    color: green;
+                }
+        
+                .profile .birthday {
+                    font-size: 14px;
+                }
+        
+                .profile .gender {
+                    font-size: 14px;
+                    margin-top: 10px;
+                }
+        
+                .profile .buttons {
+                    margin-top: 20px;
+                }
+        
+                .edit-button, .delete-button {
+                    padding: 10px 20px;
+                    background-color: #007bff;
+                    color: #fff;
+                    border: none;
+                    border-radius: 5px;
+                    margin-right: 10px;
+                    cursor: pointer;
+                }
+        
+                .delete-button {
+                    background-color: #dc3545;
+                }
+        
+                select, input[type="date"] {
+                    padding: 5px;
+                    margin: 5px;
+                }
+            </style>
+       
+            <div class="profile">
+                <h1>Meu Perfil</h1>
+                <img src="/img/perfil.png" alt="Foto de Perfil">
+                <p><label>Nome:</label> João da Silva</p>
+                <p><label>Email:</label> <span class="email">joao@example.com</span></p>
+                <p><label>CPF:</label> <span class="cpf">123.456.789-00</span></p>
+                <p class="birthday"><label>Data de Aniversário:</label> <input type="date" value="1990-01-01"></p>
+                <p class="gender">
+                    <label>Gênero:</label>
+                    <select>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                    </select>
+                </p>
+                <div class="buttons">
+                    <button class="edit-button">Editar Dados</button>
+                    <button class="delete-button">Apagar Conta</button>
+                </div>
+            </div>
+            <script>
+                const nameElement = document.getElementById("name");
+                const profileImageElement = document.getElementById("profile-image");
+                const birthdayElement = document.getElementById("birthday");
+                const genderElement = document.getElementById("gender");
+                const editButton = document.getElementById("edit-button");
+                const deleteButton = document.getElementById("delete-button");
+                
+                // Função para ativar a edição de dados
+                function enableEdit() {
+                    nameElement.contentEditable = true;
+                    birthdayElement.disabled = false;
+                    genderElement.disabled = false;
+                    editButton.style.display = "none";
+                    deleteButton.style.display = "none";
+                }
+                
+                // Função para salvar as edições
+                function saveEdits() {
+                    nameElement.contentEditable = false;
+                    birthdayElement.disabled = true;
+                    genderElement.disabled = true;
+                    editButton.style.display = "inline-block";
+                    deleteButton.style.display = "inline-block";
+                }
+                
+                // Evento de clique no botão "Editar Dados"
+                editButton.addEventListener("click", enableEdit);
+                
+                // Evento de clique no botão "Apagar Conta"
+                deleteButton.addEventListener("click", () => {
+                    const confirmDelete = confirm("Tem certeza que deseja apagar sua conta?");
+                    if (confirmDelete) {
+                        // Aqui você pode adicionar a lógica para apagar a conta (por exemplo, uma solicitação para o servidor)
+                        alert("Conta apagada com sucesso!");
+                        window.location.href = "index.html"; // Redirecionar para a página de login após a exclusão
+                    }
+                });
+                
+                // Evento de sair do campo de nome após a edição (para salvar automaticamente)
+                nameElement.addEventListener("blur", saveEdits);
+                
+                // Evento de mudança nos campos de data de aniversário e gênero (para salvar automaticamente)
+                birthdayElement.addEventListener("change", saveEdits);
+                genderElement.addEventListener("change", saveEdits);
+                </script>
+</body>
+</html>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+   
+  </main><!-- End #main -->
+
+  <div id="preloader"></div>
+ 
+  <!-- Vendor JS Files -->
+  <script src="coisa/purecounter/purecounter_vanilla.js"></script>
+  <script src="coisa/aos/aos.js"></script>
+  <script src="coisa/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="coisa/glightbox/js/glightbox.min.js"></script>
+  <script src="coisa/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="coisa/swiper/swiper-bundle.min.js"></script>
+  <script src="coisa/typed.js/typed.umd.js"></script>
+  <script src="coisa/waypoints/noframework.waypoints.js"></script>
+  <script src="coisa/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="js/usuario.js"></script>
