@@ -22,10 +22,11 @@
       <i id="mode_icon" class="fa-solid fa-moon"></i>
     </section>
 
-    <form id="form" class="form">
+    <form  action="salvarusuario.php" method="post" id="form" class="form">
       <div class="form-content">
         <label for="username"> <i class="fa-solid fa-user"></i> </label> <label for="username">Nome do usuário </label>
         <input
+        name="username"
           type="text"
           id="username"
           placeholder="Digite o nome do usuario..."
@@ -37,6 +38,7 @@
       <div class="form-content">
         <label for="email"> <i class="fa-solid fa-envelope"></i> </label> <label for="email">Email</label>
         <input
+        name="email"
           type="email"
           id="email"
           placeholder="Digite o seu email..."
@@ -48,6 +50,7 @@
       <div class="form-content">
         <label for="cpf"> <i class="fa-solid fa-users-rectangle"></i> </label> <label for="cpf">CPF</label>
         <input
+        name="cpf"
           type="text"
           id="cpf"
           placeholder="Digite o seu CPF..."
@@ -59,6 +62,7 @@
       <div class="form-content">
         <label for="password"><i class="fa-solid fa-key"></i></label> <label for="password">Senha</label>
         <input
+        name="password"
           type="password"
           id="password"
           placeholder="Digite sua senha..."
@@ -70,6 +74,7 @@
       <div class="form-content">
         <label for="password-confirmation"> <i class="fa-solid fa-key"></i></label> <label for="password-confirmation">Confirmação de senha</label>
         <input
+        name="password-confirmation"     
           type="password"
           id="password-confirmation"
           placeholder="Digite sua senha novamente..."
