@@ -343,6 +343,9 @@ body {
   }
   
 #emoji-container {
+  width: 100vw;
+  justify-content: center;
+  flex-wrap: nowrap;
     display: flex;
 }
 
@@ -381,6 +384,9 @@ label {
 
 #rating-select {
     font-size: 16px;
+  
 }
-
+#emoji-container img{
+  width: 100px;
+}
 
