@@ -20,44 +20,89 @@
   <link href="coisa/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="coisa/swiper/swiper-bundle.min.css" rel="stylesheet">
 
- 
   <link href="css/diario.css" rel="stylesheet">
 
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
 
+    #hero h1 {
+      font-size: 36px;
+      line-height: 40px;
+      color: #1de099; /* Cor verde */
+    }
+
+    #hero p {
+      margin-top: 20px;
+      font-size: 24px;
+      line-height: 28px;
+      color: #1de099; /* Cor verde */
+    }
+
+    textarea {
+      width: 90%;
+      height: 300px;
+      padding: 10px;
+      font-size: 18px;
+      border: 2px solid #1de099; /* Adiciona uma borda verde ao redor do textarea */
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 15px;
+      cursor: pointer;
+      background-color: #1de099;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #159b78;
+    }
+
+    #aviso {
+      color: red;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  </style>
 </head>
 
 <body>
-
-  
   <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex flex-column justify-content-center">
-
     <nav id="navbar" class="navbar nav-menu">
       <ul>
         <li><a href="usuario.html" class="nav-link scrollto active"><i class="fa-solid fa-user"></i></i><span>Voltar</span></a></li>
-        
       </ul>
     </nav><!-- .nav-menu -->
-
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
   <form action="diario.php" method="post">
+    <section id="hero" class="d-flex flex-column justify-content-center">
+      <div class="container" data-aos="zoom-in" data-aos-delay="100">
+        <h1>Diario</h1>
+        <p>Vamos escrever um pouco?</p>
+        <textarea name="salvar" id="inputText" placeholder="Escreva sua entrada de diário aqui..."></textarea>
+        <button type="button" onclick="verificarPalavras()">Salvar</button>
+        <p id="aviso"></p>
+      </div>
+    </section>
+  </form><!-- End Hero -->
 
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Diario</h1>
-      <p>Vamos <span class="typed" data-typed-items="escrever um pouco ?"></span></p>
-      <textarea name="salvar" placeholder="Escreva sua entrada de diário aqui..."></textarea>
-      <button>salvar</button>
-    </div>
-  </section></form><!-- End Hero -->
-
-  <main id="main">
-
-   
-  </main><!-- End #main -->
+  <main id="main"></main><!-- End #main -->
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -72,28 +117,25 @@
   <script src="coisa/typed.js/typed.umd.js"></script>
   <script src="coisa/waypoints/noframework.waypoints.js"></script>
   <script src="coisa/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
   <script src="js/usuario.js"></script>
-  <style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f0f0f0;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
 
-    textarea {
-        width: 80%;
-        height: 400px;
-        padding: 10px;
-        font-size: 16px;
+  <script>
+    function verificarPalavras() {
+      var texto = document.getElementById('inputText').value.toLowerCase();
+      var palavrasPreocupantes = ['suicídio', 'matar', 'morrer', 'suicidar', 'cortar']; // Adicione as palavras que deseja verificar aqui
+      var aviso = document.getElementById('aviso');
+
+      var encontrouPalavraPreocupante = palavrasPreocupantes.some(function (palavra) {
+        return texto.includes(palavra);
+      });
+
+      if (encontrouPalavraPreocupante) {
+        aviso.innerHTML = 'Você precisa de ajuda! Ligue 188.';
+      } else {
+        aviso.innerHTML = '';
+      }
     }
-</style>
+  </script>
 </body>
 
 </html>
