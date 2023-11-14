@@ -4,52 +4,94 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
   <title>Psicologia</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
   <link href="css/catalogo.css" rel="stylesheet">
 
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4; /* Fundo cinza claro */
+      color: #333; /* Texto preto */
+      margin: 0;
+      padding: 0;
+      position: relative;
+    }
 
+    header {
+      background-color: #1de099; /* Verde */
+      color: #fff; /* Texto branco */
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1, h2 {
+      color: #1de099; /* Verde */
+    }
+
+    h2 {
+      margin-top: 10px;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    /* Adiciona o estilo para o botão de voltar */
+    .back-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: #1de099;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: #159b78;
+    }
+    .tutorial-text {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #fff;
+      font-size: 24px;
+    }
+  </style>
 </head>
 
 <body>
 
-    <title>Como usar</title>
-
-</head>
-<body>
-    <h1>O que significa cada emoção</h1>
-      <h2>1. Alegria
-        O sentimento da Alegria, também conhecido como deleite ou contentamento, é acompanhado com uma sensação de bem estar diante de uma situação experienciada e partilhada com outros indivíduos, podendo serem vividas, também, de forma individual. A alegria, assim como outras emoções, são experimentadas ao longo da vida, variando de acordo com a faixa do desenvolvimento no qual estamos no presente (idade e momentos da vida), bem como a cultura na qual estamos inseridos. Sendo assim, o sentimento de alegria são reações de euforia, bem estar, aconchego referentes aos estímulos que nos agradam e que desencadeiam reações como aumento dos batimentos cardíacos e temperatura corporal, tende a sorrir e gargalhar mais, ou chorar (choro de alegria se difere do de tristeza em intensidade e sensação). Um exemplo de alegria pode ser quando conseguir atingir uma meta/objetivo, comemos algo que nos agrade ao paladar, ou ainda ver algo ou alguém que gostamos e nos afeiçoamos. 
-      </h2><h2>
-        2. Tristeza
-        A tristeza é um estado ou condição onde está presente a ausência de ânimo ou alegria. Esse sentimento é um dos mais comuns que sentimos. Apresenta emoções dolorosas, de infelicidade, pesar, desgosto e mágoa. 
-        Pode identificar-se em diferentes graus de intensidade, variando desde a tristeza passageira, que normalmente dura alguns minutos ou horas, à tristeza profunda, que pode persistir por vários dias ou semanas, além de ser um sinal de problemas mais complexos.
-      </h2><h2>
-        3. Medo
-        A ameaça de dano, físico ou psicológico, caracteriza os gatilhos, temas e variações associados ao medo. O tema é perigo de dano físico, e as variações podem ser qualquer coisa que aprendemos que pode nos fazer mal, ameaças, por exemplo, físicas ou psicológicas. Há gatilhos para o medo: algo arremessado através do espaço rapidamente que nos atingirá caso não nos esquivamos ou a perda inesperada de apoio, causando a queda.
-        </h2><h2>4. Raiva
-        O sentimento de raiva é, muitas vezes, uma mistura complexa de emoções como frustração, irritação e até mesmo uma certa hostilidade. Geralmente, ela aparece quando é deparado alguma situação ameaçadora ou quando existem barreiras que podem atrapalhar alcances de objetivos pessoais. É importante entender que sentir raiva é uma reação emocional completamente natural e que essa intensidade pode variar desde um leve desconforto até uma fúria realmente avassaladora. Além disso, a raiva tem um papel crucial na forma de adaptação e enfrentamento de desafios e ameaças do cotidiano.
-        </h2><h2>
-        5. Nojo 
-        O sentimento de nojo  é acompanhado pelo desagrado e aversão àquilo que está à nossa frente. O que sentimos nojo pode mudar dependendo da nossa idade ou cultura em que estamos inseridos. O sentimento de repugnância é comum para qualquer pessoa e naturalmente não gostamos de estar próximos ao que nos causa aversão. A repulsa se  trata de uma reação do nosso corpo a estímulos que achamos desagradáveis ou negativos, causando a rejeição, como por exemplo, um peixe que passou da validade. Além disso, podem surgir reações do nosso corpo como enjoo e vômito.
-        </h2><h2>
-        6. Surpresa
-        O sentimento de surpresa, também chamado de perplexidade e espanto, é uma emoção caracterizada por uma reação breve do corpo e ocorre após um acontecimento em que não esperávamos. Podemos ficar surpresos de uma maneira positiva, quando alguém nos dá um presente inesperado ou negativo, como um susto por exemplo. Quando ficamos surpresos, normalmente é porque acreditávamos que aquilo não era possível acontecer e não esperávamos por isso. Algumas das características físicas mais relevantes do sentimento de surpresa são arregalar os olhos, erguer as sobrancelhas, abrir a boca, pular para trás, gritos ou até mesmo uma breve falta de ar e nas situações de surpresa negativas, como ao tomar um susto, pode causar uma resposta em nosso corpo de luta ou fuga, como sair correndo ou sentir-se irritado.  
-      </h2>
-    
-        
-</header>
-  </section><!-- End Hero -->
-
-  <main id="main">
-
+  <header>
+    <li><a href="perfil.html" class="nav-link scrollto active"><i class="fa-solid fa-user"></i></i><span>Perfil</span></a></li>
    
-  </main><!-- End #main -->
+  </header>
 
+  <!-- Adiciona o botão de voltar -->
+  <a href="#" class="back-button" onclick="history.go(-1)">Voltar</a>
+  <div class="tutorial-text">Tutorial</div>
   
+
+  <section>
+    <h2>1. Alegria</h2>
+    <p> O sentimento da Alegria, também conhecido como deleite ou contentamento, é acompanhado com uma sensação de bem estar diante de uma situação experienciada e partilhada com outros indivíduos, podendo serem vividas, também, de forma individual. A alegria, assim como outras emoções, são experimentadas ao longo da vida, variando de acordo com a faixa do desenvolvimento no qual estamos no presente (idade e momentos da vida), bem como a cultura na qual estamos inseridos. Sendo assim, o sentimento de alegria são reações de euforia, bem estar, aconchego referentes aos estímulos que nos agradam e que desencadeiam reações como aumento dos batimentos cardíacos e temperatura corporal, tende a sorrir e gargalhar mais, ou chorar (choro de alegria se difere do de tristeza em intensidade e sensação). Um exemplo de alegria pode ser quando conseguir atingir uma meta/objetivo, comemos algo que nos agrade ao paladar, ou ainda ver algo ou alguém que gostamos e nos afeiçoamos.</p>
+    <h2>2. Tristeza</h2>
+    <p> A tristeza é um estado ou condição onde está presente a ausência de ânimo ou alegria. Esse sentimento é um dos mais comuns que sentimos. Apresenta emoções dolorosas, de infelicidade, pesar, desgosto e mágoa. 
+      Pode identificar-se em diferentes graus de intensidade, variando desde a tristeza passageira, que normalmente dura alguns minutos ou horas, à tristeza profunda, que pode persistir por vários dias ou semanas, além de ser um sinal de problemas mais complexos. </p>
+    <h2>3. Medo</h2>
+    <p> A ameaça de dano, físico ou psicológico, caracteriza os gatilhos, temas e variações associados ao medo. O tema é perigo de dano físico, e as variações podem ser qualquer coisa que aprendemos que pode nos fazer mal, ameaças, por exemplo, físicas ou psicológicas. Há gatilhos para o medo: algo arremessado através do espaço rapidamente que nos atingirá caso não nos esquivamos ou a perda inesperada de apoio, causando a queda.</p>
+    <h2>4. Raiva</h2>
+    <p> O sentimento de raiva é, muitas vezes, uma mistura complexa de emoções como frustração, irritação e até mesmo uma certa hostilidade. Geralmente, ela aparece quando é deparado alguma situação ameaçadora ou quando existem barreiras que podem atrapalhar alcances de objetivos pessoais. É importante entender que sentir raiva é uma reação emocional completamente natural e que essa intensidade pode variar desde um leve desconforto até uma fúria realmente avassaladora. Além disso, a raiva tem um papel crucial na forma de adaptação e enfrentamento de desafios e ameaças do cotidiano.</p>
+    <h2>5. Nojo</h2>
+    <p> O sentimento de nojo  é acompanhado pelo desagrado e aversão àquilo que está à nossa frente. O que sentimos nojo pode mudar dependendo da nossa idade ou cultura em que estamos inseridos. O sentimento de repugnância é comum para qualquer pessoa e naturalmente não gostamos de estar próximos ao que nos causa aversão. A repulsa se  trata de uma reação do nosso corpo a estímulos que achamos desagradáveis ou negativos, causando a rejeição, como por exemplo, um peixe que passou da validade. Além disso, podem surgir reações do nosso corpo como enjoo e vômito.</p>
+    <h2>6. Surpresa</h2>
+    <p> O sentimento de surpresa, também chamado de perplexidade e espanto, é uma emoção caracterizada por uma reação breve do corpo e ocorre após um acontecimento em que não esperávamos. Podemos ficar surpresos de uma maneira positiva, quando alguém nos dá um presente inesperado ou negativo, como um susto por exemplo. Quando ficamos surpresos, normalmente é porque acreditávamos que aquilo não era possível acontecer e não esperávamos por isso. Algumas das características físicas mais relevantes do sentimento de surpresa são arregalar os olhos, erguer as sobrancelhas, abrir a boca, pular para trás, gritos ou até mesmo uma breve falta de ar e nas situações de surpresa negativas, como ao tomar um susto, pode causar uma resposta em nosso corpo de luta ou fuga, como sair correndo ou sentir-se irritado.  </p>
+  </section>
+
+  <main id="main"></main>
 
 </body>
 
