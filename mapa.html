@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<!-- Vendor CSS Files -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Vendor CSS Files -->
   <link href="coisa/aos/aos.css" rel="stylesheet">
   <link href="coisa/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="coisa/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -15,37 +20,177 @@
   <link href="coisa/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/mapa.css">
 </head>
-<body>
-    <h1>Qual emoji representa sua emoção agora ?</h1>
 
-    <div id="emoji-container">
-      
-            <div class="emoji emoji-1">😀</div>
-            <div class="emoji emoji-2">😁</div>
-            <div class="emoji emoji-1">😂</div>
-            <div class="emoji emoji-1">😃</div>
-            <div class="emoji emoji-1">😄</div>
-            <div class="emoji emoji-1">😅</div>
-            <div class="emoji emoji-1">😆</div>
-        </div>
-        <!-- Adicione mais emojis conforme necessário -->
+<body>
+  <h1>Qual emoji representa sua emoção agora ?</h1>
+<form action="mapa.php"method="POST">
+  <div id="emoji-container">
+    <div>
+      <img src="img/Alegria.jpg" alt="">
+      <div class="intensidade">
+        <input type="radio" id="ALEGRIA1" name="ALEGRIA" value="1" />
+        <label>1</label>
+      </div>
+      <div class="intensidade">
+        <input type="radio" id="ALEGRIA2" name="ALEGRIA" value="2" />
+        <label>2</label>
+      </div>
+      <div class="intensidade">
+        <input type="radio" id="ALEGRIA3" name="ALEGRIA" value="3" />
+        <label>3</label>
+      </div>
+      <div class="intensidade">
+        <input type="radio" id="ALEGRIA4" name="ALEGRIA" value="4" />
+        <label>4</label>
+      </div>
+      <div class="intensidade">
+        <input type="radio" id="ALEGRIA5" name="ALEGRIA" value="5" />
+        <label>5</label>
+      </div>
     </div>
-    
-   
-    <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
-    <!-- ======= Header ======= -->
-    <header id="header" class="d-flex flex-column justify-content-center">
+    <div>
+      <img src="img/Raiva.jpg" alt="">
+
+
+      <div class="intensidade">
+        <input type="radio" id="RAIVA1" name="RAIVA" value="1" />
+        <label>1</label>
+      </div>
+      <div class="intensidade">
+        <input type="radio" id="RAIVA2" name="RAIVA" value="2" />
+        <label>2</label>
+      </div>
+      <div class="intensidade">
+        <input type="radio" id="RAIVA3" name="RAIVA" value="3" />
+        <label>3</label>
+      </div>
+      <div class="intensidade">
+        <input type="radio" id="RAIVA4" name="RAIVA" value="4" />
+        <label>4</label>
+      </div>
+      <div class="intensidade">
+        <input type="radio" id="RAIVA5" name="RAIVA" value="5" />
+        <label>5</label>
+      </div>
+    </div>
+    <div>
+      <img src="img/Nojo.jpg" alt="">
+      <div class="intensidade">
+        <input type="radio" id="NOJO1" name="NOJO" value="1" />
+        <label>1</label>
+      </div>
+      <div class="intensidade">
+        <input type="radio" id="NOJO2" name="NOJO" value="2" />
+        <label>2</label>
+      </div>
+      <div class="intensidade">
+        <input type="radio" id="NOJO3" name="NOJO" value="3" />
+        <label>3</label>
+      </div>
+      <div class="intensidade">
+        <input type="radio" id="NOJO4" name="NOJO" value="4" />
+        <label>4</label>
+      </div>
+      <div class="intensidade">
+        <input type="radio" id="NOJO5" name="NOJO" value="5" />
+        <label>5</label>
+      </div>
+    </div>
+    <div>
+      <img src="img/Surpresa.jpg" alt="">
+      <div class="intensidade">
+        <input type="radio" id="SURPRESA1" name="SURPRESA" value="1" />
+        <label>1</label>
+      </div>
+      <div class="intensidade">
+        <input type="radio" id="SURPRESA2" name="SURPRESA" value="2" />
+        <label>2</label>
+      </div>
+      <div class="intensidade">
+        <input type="radio" id="SURPRESA3" name="SURPRESA" value="3" />
+        <label>3</label>
+      </div>
+      <div class="intensidade">
+        <input type="radio" id="SURPRESA4" name="SURPRESA" value="4" />
+        <label>4</label>
+      </div>
+      <div class="intensidade">
+        <input type="radio" id="SURPRESA5" name="SURPRESA" value="5" />
+        <label>5</label>
+      </div>
+    </div>
+    <div>
+      <img src="img/Tristeza.jpg" alt="">
+      <div class="intensidade">
+        <input type="radio" id="TRISTEZA1" name="TRISTEZA" value="1" />
+        <label>1</label>
+      </div>
+      <div class="intensidade">
+        <input type="radio" id="TRISTEZA2" name="TRISTEZA" value="2" />
+        <label>2</label>
+      </div>
+      <div class="intensidade">
+        <input type="radio" id="TRISTEZA3" name="TRISTEZA" value="3" />
+        <label>3</label>
+      </div>
+      <div class="intensidade">
+        <input type="radio" id="TRISTEZA4" name="TRISTEZA" value="4" />
+        <label>4</label>
+      </div>
+      <div class="intensidade">
+        <input type="radio" id="TRISTEZA5" name="TRISTEZA" value="5" />
+        <label>5</label>
+
+      </div>
+
+    </div>
+    <div>
+      <img src="img/Medo.jpg" alt="">
+      <div class="intensidade">
+        <input type="radio" id="MEDO1" name="MEDO" value="1" />
+        <label>1</label>
+      </div>
+      <div class="intensidade">
+        <input type="radio" id="MEDO2" name="MEDO" value="2" />
+        <label>2</label>
+      </div>
+      <div class="intensidade">
+        <input type="radio" id="MEDO3" name="MEDO" value="3" />
+        <label>3</label>
+      </div>
+      <div class="intensidade">
+        <input type="radio" id="MEDO4" name="MEDO" value="4" />
+        <label>4</label>
+      </div>
+      <div class="intensidade">
+        <input type="radio" id="MEDO5" name="MEDO" value="5" />
+        <label>5</label>
+      </div>
+      <button>salvar</button>
+    </div>
+  </div>
+
+  </div>
   
-      <nav id="navbar" class="navbar nav-menu">
-        <ul>
-          <li><a href="usuario.html" class="nav-link scrollto active"><i class="fa-solid fa-user"></i></i><span>Voltar</span></a></li>
-          
-          
-        </ul>
-      </nav><!-- .nav-menu -->
-  
-    </header><!-- End Header -->
-    <!-- Vendor JS Files -->
+</form>
+
+
+
+  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
+
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a href="usuario.html" class="nav-link scrollto active"><i
+              class="fa-solid fa-user"></i></i><span>Voltar</span></a></li>
+
+
+      </ul>
+    </nav><!-- .nav-menu -->
+
+  </header><!-- End Header -->
+  <!-- Vendor JS Files -->
   <script src="coisa/purecounter/purecounter_vanilla.js"></script>
   <script src="coisa/aos/aos.js"></script>
   <script src="coisa/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -57,5 +202,5 @@
   <script src="coisa/php-email-form/validate.js"></script>
   <script src="js/mapa.js"></script>
 </body>
-</html>
 
+</html>
